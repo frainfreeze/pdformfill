@@ -1,7 +1,5 @@
 # pdformfill
 
-[![Build Status](https://api.travis-ci.org/frainfreeze/pdformfill.svg?branch=master)](https://travis-ci.org/frainfreeze/pdformfill)
-
 Fill PDF forms by generating FDF data and then using [`pdftk`](http://www.pdflabs.com/tools/pdftk-server/) to push the fdf into a PDF form and generate the output.
 
 ## Quick install

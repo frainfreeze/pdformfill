@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="pdformfill",
-    version="0.0.3",
+    version="0.0.4",
     author="Tomislav Kucar",
     author_email="kucar.tomislav@gmail.com",
     url="http://github.com/frainfreeze/pdformfill",
