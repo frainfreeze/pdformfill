@@ -49,7 +49,7 @@ def test_form_fill():
               ('potpis', 'SivoIvo')]
 
     in_file = os.path.join(TEST_DATA_DIR, "PO-SD2020_da.pdf")
-    out_file = os.path.join(TEST_DATA_DIR, "new_output.pdf")
+    out_file = os.path.join(TEST_DATA_DIR, "new_out.pdf")
     pdformfill.fill_pdf(fields, in_file, out_file)
     print(os.getcwd())
-    assert filecmp.cmp(os.path.join(TEST_DATA_DIR, "output.pdf"), out_file) == True
+    assert filecmp.cmp(os.path.join(TEST_DATA_DIR, "out.pdf"), out_file,  shallow=False) == True
