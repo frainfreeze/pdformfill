@@ -4,4 +4,4 @@
 .tox
 dist
 build
-output.pdf
+new_output.pdf
