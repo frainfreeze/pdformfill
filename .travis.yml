@@ -1,0 +1,19 @@
+dist: xenial
+language: python
+python:
+- '2.7'
+- '3.4'
+- '3.5'
+- '3.6'
+- '3.7'
+install: pip install tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: frainfreeze
+  password:
+    secure: hsPwFHHR/4zmCJinA+4Ir3X9eubREU290PUHdPut52DC6XLcbuFdYneHWHd30NwQ4fPWux3CqwjwWdh80dPMzX4sCCfGUoBeJ3s4HGwPwA3d67RvHb6ze16wmQFzG1QpPdPkq/CYB3ItLvuMP7SoJNgh3yBhaaUdtjeXTB+XZXUM+GqzjbsNZtG/gpGmnIxhm1X/e6Ug/NB5TXVT1DNmdbYXq3aOsgPe1mcdwtCHHX6466Cq/L1kiCOCM0dEOCfx45nGvTVefELBxH67MaQPGyDRPqj1HEjr+Mwqo+UVIA1/4ga7Zgph+Y/vbW1IVZVbuAkY2q1FQ2O1AKsEerF7S+xsZb6ZapaQZaLBsM/dMHRogYRb79SNUAR/CO1xyMbHPpNxrbq9gJzTiSfZGLko9TYnc20FH4nQgbuPRYLeUxNOYfdQmaDE20jgRkspHHu1UHyKpCDonzsNDSZIatCIr9vEJPsSLU24YGJVbmCZ28uNmCAnGQo8vcDovIC+LajVHz0ifn9Sx0HWZYYWi39eaNiBOolJcPPCv3NbPud/IVTdOtmAYVAJQRYZewlgH7T6avGuMzgqC7SRvp3dkojV/xzVbYzLOX9G3HhAk9Q0ZAVNBGuHytpK+sV3dI7f/rEJ3efahnKw10qvI0IjQsHxlvU0rNnboO9qUGXRw1llG4w=
+  on:
+    tags: true
+    repo: frainfreeze/pdformfill
